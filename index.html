@@ -202,37 +202,94 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+    <div class="smartphones-container">
+      <div class="smartphones-list">
+        <h3>Best Deals on Smartphones</h3>
+        <div class="smartphones">
+          <div class="smartphones-card">
+            <div class="card-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/170/170/xif0q/mobile/y/9/0/-original-imahyuhfg2z4fvyh.jpeg?q=80"
+                alt=""
+              />
+            </div>
+            <div class="model-name">Realme P1 5g</div>
+            <div class="price">From ₹14,999</div>
+          </div>
+          <div class="smartphones-card">
+            <div class="card-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/170/170/xif0q/mobile/g/b/x/-original-imagtt4h4ptmxgwn.jpeg?q=80"
+                alt=""
+              />
+            </div>
+            <div class="model-name">Vivo T2 Pro 5g</div>
+            <div class="price">From ₹20,999</div>
+          </div>
+          <div class="smartphones-card">
+            <div class="card-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/170/170/xif0q/mobile/d/h/q/m6-pro-5g-mzb0eprin-poco-original-imags3e7vewsafst.jpeg?q=80"
+                alt=""
+              />
+            </div>
+            <div class="model-name">Poco M6 Pro 5g</div>
+            <div class="price">From ₹9,999</div>
+          </div>
+          <div class="smartphones-card">
+            <div class="card-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/170/170/xif0q/mobile/4/y/b/-original-imahyzygycuyg3mq.jpeg?q=80"
+                alt=""
+              />
+            </div>
+            <div class="model-name">Realme P1 Pro 5g</div>
+            <div class="price">From ₹22,999</div>
+          </div>
+          <div class="smartphones-card">
+            <div class="card-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/170/170/xif0q/mobile/5/t/j/edge-50-fusion-pb300002in-motorola-original-imahywzrfagkuyxx.jpeg?q=80"
+                alt=""
+              />
+            </div>
+            <div class="model-name">Moto Edge 50 Fusion</div>
+            <div class="price">From ₹22,999</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
+    <div class="banner-container">
+      <div class="banner-section">
+        <div class="banner-card">
+          <div class="banner">
+            <div class="banner-img">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/320/170/image/e4857495b5d2e5a2.jpg?q=20"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/320/170/image/daeed90eb62e77d3.png?q=20"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner-img">
+              <img
+                src="https://rukminim1.flixcart.com/fk-p-flap/320/170/image/fcc9b52b63f73932.jpg?q=20"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
